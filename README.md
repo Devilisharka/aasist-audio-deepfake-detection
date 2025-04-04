@@ -1,4 +1,4 @@
-# aasist-audio-deepfake-detection
+# AASIST-audio-deepfake-detection
 **For the 3 forgery detection approaches i choose the following papers:**
 
 **1) How to Boost Anti-Spoofing with X-Vectors:**
