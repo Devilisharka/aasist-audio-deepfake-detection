@@ -86,3 +86,52 @@ More diverse and large-scale spoofed audio samples, including recent deepfake me
 **Approach for Production Deployment:**
 
 I would start by saving the trained model and creating a simple API using Flask or FastAPI to allow other applications to send audio files and receive predictions. To make it easier to manage and run on different systems, I’d package the project using Docker. Before going live, I’d test the model with real-world audio examples to check if it handles different recording qualities well. For ongoing use, I’d also add basic logging to track how the model performs over time and flag any unusual inputs or low-confidence predictions.
+
+
+## Requirements
+
+This project was implemented and tested on [Kaggle Notebooks](https://www.kaggle.com/code), which provides a pre-configured environment with most dependencies installed.  
+You can run the entire pipeline without any additional setup.
+
+**📌 Kaggle Notebook (public):** [https://www.kaggle.com/code/arkaprabharay/asvspoof2019-with-aasist](https://www.kaggle.com/code/arkaprabharay/asvspoof2019-with-aasist)
+
+---
+
+### 📦 Dependencies
+
+The following libraries were used (all pre-installed in Kaggle):
+
+- Python 3.8+
+- PyTorch
+- torchaudio
+- librosa
+- numpy
+- pandas
+- matplotlib
+- tqdm
+
+> ✅ No manual installation needed when using Kaggle.
+
+---
+
+### 🔁 Reproducibility
+
+This project is fully reproducible within the Kaggle environment. The ASVspoof 2019 dataset provides predefined folder structures for training and evaluation.
+
+- No additional data preprocessing or splitting was necessary.
+- Results can be reproduced by simply running the notebook in Kaggle.
+- If using locally, ensure the dataset structure mirrors that in the original ASVspoof 2019 setup.
+
+---
+
+### 📂 Data Access
+
+The project uses the [ASVspoof 2019 LA dataset](https://datashare.ed.ac.uk/handle/10283/3336).
+
+To access the data in Kaggle:
+
+1. Download the dataset manually from the above link (access request may be required).
+2. Upload the relevant parts (`flac` files, `protocols` folder, etc.) to your Kaggle Notebook via the **“Add data”** section.
+3. The notebook expects the following folder structure:
+
+
